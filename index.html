@@ -14,36 +14,34 @@ e<!doctype html>
             width: 1000px;
             height: 833px;
         }
-</style>
-    <title>Mapa de Janeiro Florianópolis</title>
+    <title>A Dengue em Janeiro</title>
     <style>
-/* Estilos CSS */
-body, html {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         .mapa {
-    background-color: white;
-    position: relative;
-    margin-top: 20px;
-    margin-left: auto; 
-    margin-right: auto; 
-}
+            background-color: white;
+            position: relative;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
         .titulo-legenda {
-    margin-bottom: 10px;
-    background-color: white; 
-    padding: 10px; 
-    border: 1px solid #ccc; 
-    position: absolute;
-    top: 50%;
-    right: 10px; 
-    transform: translateY(-50%); 
-    font-weight: normal; 
-}
-          .tab1 {
+            margin-bottom: 10px;
+            background-color: white;
+            padding: 10px;
+            border: 1px solid #ccc;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            font-weight: normal;
+        }
+        .tab1 {
             background-color: rgba(0, 47, 101, 1);
             color: white;
             border: none;
@@ -55,42 +53,45 @@ body, html {
             top: 110%;
             transform: translateY(-50%);
             margin-bottom: 10px;
-    }
+        }
         .titulo h1 {
-    font-size: 18px; 
-    text-align: center;    
-}
+            font-size: 18px;
+            text-align: center;
+        }
         .titulo h2 {
-    font-size: 14px; 
-    line-height: 1.2; 
-    font-weight: normal;    
- }
+            font-size: 14px;
+            line-height: 1.2;
+            font-weight: normal;
+        }
         p {
-            font-size: 14px; /* Tamanho da fonte do parágrafo */
-            margin-bottom: 8px; /* Espaçamento abaixo de cada parágrafo */
-            text-align: justify; /* Centraliza o texto do título */
-            font-weight: normal; /* Remove o negrito do texto do título */
+            font-size: 14px;
+            margin-bottom: 8px;
+            text-align: justify;
+            font-weight: normal;
         }
         .legenda-cor {
-    background-color: white; 
-    border: 1px solid black; 
-    line-height: 1.2;}
-</style>
+            background-color: white;
+            border: 1px solid black;
+            line-height: 1.2;
+        }
+    </style>
 </head>
+<body>
     <div class="mapa">
-    <!-- Título e Legenda -->
-    <div class="titulo-legenda">
-        <div class="titulo">
-            <h1> A dengue em Janeiro </h1>
+        <!-- Título e Legenda -->
+        <div class="titulo-legenda">
+            <div class="titulo">
+                <h1>A Dengue em Janeiro</h1>
+            </div>
+            <img src="legenda_janeiro.png">
+            <h2>
+                <p>Fonte: SINAN</p>
+                <p>Para um melhor desempenho, abra a página no Firefox</p>
+                <p>Mapa do OpenStreetMap</p>
+            </h2>
+            <button class="tab1"><a href="https://mapadecalorflorianopolis.netlify.app/#11/-27.6166/-48.5349" style="background-color: rgba(0, 47, 101, 1); color: white; padding: 10px; text-decoration: none;">Voltar</a></button>
         </div>
-        <img src="legenda_janeiro.png">
-        <h2>
-        <p> Fonte: SINAN </p>
-        <p> Para um melhor desempenho, abra a página no Firefox </p>
-        <p> Mapa do OpenStreetMap </p>
-        </h2>
-             <button class="tab1"><a href="https://mapadecalorflorianopolis.netlify.app/#11/-27.6166/-48.5349" style="background-color: rgba(0, 47, 101, 1); color: white; padding: 10px; text-decoration: none;">Voltar</a></button>
-      </div>
+    </div>
     <body>
         <div id="map">
         </div>

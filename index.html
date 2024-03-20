@@ -10,14 +10,14 @@
         <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
         <link rel="stylesheet" href="css/leaflet-control-geocoder.Geocoder.css">
         <link rel="stylesheet" href="css/leaflet-measure.css">
-        SS MAPA JANEIRO:
+        
 <style>
         #map {
             width: 1164px;
             height: 844px;
         }
             </style>
-    <title></title>
+    <title>Mapa de Calor: dengue em janeiro</title>
     <style>
         body, html {
     height: 100%;
@@ -109,7 +109,7 @@
                 style="background-color: rgba(0, 47, 101, 1); color: white; padding: 10px; text-decoration: none;">Página Inicial</a></button>
         </div>
     <div>    
-        <button class="tab2"><a href="" style="background-color: rgba(0, 47, 101, 1); color: white; padding: 8px; text-decoration: none;">Fevereiro</a> </button>
+        <button class="tab2"><a href="https://mapacalorfevereiro24.netlify.app/#13/-27.5147/-48.5446" style="background-color: rgba(0, 47, 101, 1); color: white; padding: 8px; text-decoration: none;">Fevereiro</a> </button>
         </div>
     </div>
 
@@ -204,7 +204,7 @@
         document.getElementsByClassName('leaflet-control-geocoder-icon')[0]
         .title += 'Search for a place';
         var baseMaps = {};
-        L.control.layers(baseMaps,{"Confirmados dengue janeiro 2024": layer_Confirmadosdenguejaneiro2024_1,"OpenStreetMap": layer_OpenStreetMap_0,},{collapsed:false}).addTo(map);
+        L.control.layers(baseMaps,{"Casos de dengue": layer_Confirmadosdenguejaneiro2024_1,"OpenStreetMap": layer_OpenStreetMap_0,},{collapsed:false}).addTo(map);
         setBounds();
         L.ImageOverlay.include({
             getBounds: function () {
